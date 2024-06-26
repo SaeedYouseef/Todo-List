@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Todo List App</title>
+</head>
+<body>
+    <div class="wrapper ">
+        <div class="screen-backdrop"></div>
+        <div class="screen screen-home">
+            <!-- head-wrapper -->
+            <div class="head-wrapper">
+                <div class="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+                    </svg>
+                </div>
+                <div class="welcome">
+                    <div class="content">
+                        <h2>Welcome to your diary</h2>
+                        <p class="num-task">Today You Have <span class="total-tasks-number"></span> Tasks</p>
+                    </div>
+                    <div class="img">
+                        <div class="backdrop"></div>
+                        <img src="images/boy.png">
+                    </div>
+                </div>
+            </div>
+            <!-- categories-wrapper -->
+            <div class="categories-wrapper">
+                <div class="categories">
+                    <!-- <div class="category">
+                        <div class="left">
+                            <img src="images/boy.png" alt=""/>
+                            <div class="content">
+                                <h1 >Personal</h1>
+                                <p ></p>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="toggle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="screen category-screen">
+            <div class="head-wrapper">
+                <div class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"></path>
+                    </svg>
+                </div>
+                <div class="options">
+                    <div class="toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+            <div class="category-details">
+                <img src="images/boy.png" alt="" id="category-img"/>
+                <div class="details">
+                    <p class="num-tasks"></p>
+                    <h1 class="category-title">Personal</h1>
+                </div>
+            </div>
+            <div class="tasks-wrapper">
+                <div class="tasks">
+                    <!-- <div class="task-wrapper">
+                        <label for="task" class="task">
+                            <input type="checkbox" name="" id="task" required>
+                            <span class="checkmark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2.2rem" height="2.2rem" viewBox="0 0 24 24" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M21.2287 6.60355C21.6193 6.99407 21.6193 7.62723 21.2287 8.01776L10.2559 18.9906C9.86788 19.3786 9.23962 19.3814 8.84811 18.9969L2.66257 12.9218C2.26855 12.5349 2.26284 11.9017 2.64983 11.5077L3.35054 10.7942C3.73753 10.4002 4.37067 10.3945 4.7647 10.7815L9.53613 15.4677L19.1074 5.89644C19.4979 5.50592 20.1311 5.50591 20.5216 5.89644L21.2287 6.60355Z"
+                                        fill="#000000" />
+                                </svg>
+                            </span>
+                            <p>Buy a New Car </p>
+                        </label>
+                        <div class="delete">
+                            <svg class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="4" y1="7" x2="20" y2="7" />
+                                <line x1="10" y1="11" x2="10" y2="17" />
+                                <line x1="14" y1="11" x2="14" y2="17" />
+                                <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+                                <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+                            </svg>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="add-task-btn">
+            <svg  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+        </div>
+        <div class="black-backdrop"></div>
+        <div class="add-task">
+            <div class="add-task-backdrop"></div>
+            <h1 class="heading">Add Task</h1>
+            <div class="input-group">
+                <label for="task-input">Task</label>
+                <input type="text" id="task-input" required />
+            </div>
+            <div class="input-group">
+                <label for="category-select">Category</label>
+                <select name="" id="category-select">
+                </select>
+            </div>
+            <div class="btns">
+                <button class="cancel-btn">Cancel</button>
+                <button class="add-btn">Add</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
